@@ -32,7 +32,8 @@ sudo apt install net-tools -y
 wget -O "$home/.tmux.conf" https://raw.githubusercontent.com/gpakosz/.tmux/master/.tmux.conf
 echo -e "set -g mouse on" >> "$home/.tmux.conf"
 chown $user:$user $home/.tmux.conf
-
+cat .tmux.conf | grep -v "-e set -g mouse on" > .tmux.conf      #刪掉這行 因為這行用法已經棄用
+echo "set -g mouse on" >> .tmux.conf
 
 
 
