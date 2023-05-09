@@ -11,5 +11,5 @@ fi
 
 sed -i "s/$1/$2/g" $target1
 sed -i "s/$1/$2/g" $target2
-sed -i "s/$1/$2/g" $target3s
+sed -i "s/$1/$2/g" $target3
 
