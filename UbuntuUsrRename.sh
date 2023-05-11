@@ -22,3 +22,5 @@ sed -i "s/$1/$2/g" $target3
 mv /home/$1 /home/$2
 
 passwd $2
+
+rm UbuntuUsrRename.sh
